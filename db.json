@@ -1,194 +1,193 @@
 {
-    "coffees": [
-        {
-          "id":"1",
-          "name": "Espresso",
-          "category": "Hot",
-          "brand": "Lavazza",
-          "price": 2.99,
-          "size": "2 oz",
-          "img": "https://static.wixstatic.com/media/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png"
-        },
-        {
-          "id":"2",
-          "name": "Latte",
-          "category": "Hot",
-          "brand": "Starbucks",
-          "price": 4.99,
-          "size": "12 oz",
-          "img": "https://as2.ftcdn.net/v2/jpg/03/15/91/95/1000_F_315919556_b7J8OGH5IobzosWBmC5NOwMoP5eZLpxn.jpg"
-        },
-        {
-          "id":"3",
-          "name": "Cappuccino",
-          "category": "Hot",
-          "brand": "Illy",
-          "price": 3.99,
-          "size": "6 oz",
-          "img": "https://tse2.mm.bing.net/th?id=OIP.JUn3nT2byRSbvv9MCp1cYwHaHa&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"4",
-          "name": "Americano",
-          "category": "Hot",
-          "brand": "Peet's Coffee",
-          "price": 2.49,
-          "size": "8 oz",
-          "img": "https://www.craftcoffeeguru.com/wp-content/uploads/2019/02/americano12.jpg"
-        },
-        {
-          "id":"5",
-          "name": "Flat White",
-          "category": "Hot",
-          "brand": "Stumptown",
-          "price": 4.49,
-          "size": "8 oz",
-          "img": "https://espressocoffeebrewers.com/wp-content/uploads/2020/12/white-coffee-1542x2048.jpg"
-        },
-        {
-          "id":"6",
-          "name": "Macchiato",
-          "category": "Hot",
-          "brand": "Lavazza",
-          "price": 3.29,
-          "size": "3 oz",
-          "img": "https://tse4.mm.bing.net/th?id=OIP.w_RmjbuDKCxpHhUmSgtfWgHaIK&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"7",
-          "name": "Mocha",
-          "category": "Hot",
-          "brand": "Dunkin'",
-          "price": 4.79,
-          "size": "12 oz",
-          "img": "https://www.everyday-delicious.com/wp-content/uploads/2022/07/iced-mocha-everyday-delicious-1.jpg"
-        },
-        {
-          "id":"8",
-          "name": "Cold Brew",
-          "category": "Cold",
-          "brand": "Starbucks",
-          "price": 3.99,
-          "size": "16 oz",
-          "img": "https://tse3.mm.bing.net/th?id=OIP.MJB8MrQaAwFTJCV9ZG9tfAHaHZ&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"9",
-          "name": "Iced Latte",
-          "category": "Cold",
-          "brand": "Peet's Coffee",
-          "price": 4.99,
-          "size": "16 oz",
-          "img": "https://tse2.explicit.bing.net/th?id=OIP.H-CiFXPH6tz3R7oYfK4PbgHaN3&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"10",
-          "name": "Iced Americano",
-          "category": "Cold",
-          "brand": "Blue Bottle",
-          "price": 3.49,
-          "size": "12 oz",
-          "img": "https://tse2.mm.bing.net/th?id=OIP.KyWOSvDWQTfY3JrpojzH3gHaEK&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"11",
-          "name": "Nitro Cold Brew",
-          "category": "Cold",
-          "brand": "Stumptown",
-          "price": 5.49,
-          "size": "12 oz",
-          "img": "https://static.wixstatic.com/media/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png"
-        },
-        {
-          "id":"12",
-          "name": "Frappuccino",
-          "category": "Cold",
-          "brand": "Starbucks",
-          "price": 5.99,
-          "size": "16 oz",
-          "img": "https://as2.ftcdn.net/v2/jpg/03/15/91/95/1000_F_315919556_b7J8OGH5IobzosWBmC5NOwMoP5eZLpxn.jpg"
-        },
-        {
-          "id":"13",
-          "name": "Iced Mocha",
-          "category": "Cold",
-          "brand": "Caribou Coffee",
-          "price": 4.79,
-          "size": "16 oz",
-          "img": "https://tse2.mm.bing.net/th?id=OIP.JUn3nT2byRSbvv9MCp1cYwHaHa&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"14",
-          "name": "Affogato",
-          "category": "Dessert",
-          "brand": "Lavazza",
-          "price": 5.29,
-          "size": "4 oz",
-          "img": "https://www.craftcoffeeguru.com/wp-content/uploads/2019/02/americano12.jpg"
-        },
-        {
-          "id":"15",
-          "name": "Irish Coffee",
-          "category": "Alcoholic",
-          "brand": "Baileys",
-          "price": 6.99,
-          "size": "8 oz",
-          "img": "https://espressocoffeebrewers.com/wp-content/uploads/2020/12/white-coffee-1542x2048.jpg"
-        },
-        {
-          "id":"16",
-          "name": "Café au Lait",
-          "category": "Hot",
-          "brand": "Cafe du Monde",
-          "price": 3.79,
-          "size": "12 oz",
-          "img": "https://tse4.mm.bing.net/th?id=OIP.w_RmjbuDKCxpHhUmSgtfWgHaIK&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"17",
-          "name": "Ristretto",
-          "category": "Hot",
-          "brand": "Illy",
-          "price": 2.99,
-          "size": "1 oz",
-          "img": "https://www.everyday-delicious.com/wp-content/uploads/2022/07/iced-mocha-everyday-delicious-1.jpg"
-        },
-        {
-          "id":"18",
-          "name": "Turkish Coffee",
-          "category": "Hot",
-          "brand": "Kurukahveci Mehmet Efendi",
-          "price": 4.99,
-          "size": "4 oz",
-          "img": "https://tse3.mm.bing.net/th?id=OIP.MJB8MrQaAwFTJCV9ZG9tfAHaHZ&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"19",
-          "name": "Vietnamese Iced Coffee",
-          "category": "Cold",
-          "brand": "Trung Nguyen",
-          "price": 3.99,
-          "size": "12 oz",
-          "img": "https://tse2.explicit.bing.net/th?id=OIP.H-CiFXPH6tz3R7oYfK4PbgHaN3&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"20",
-          "name": "Caramel Macchiato",
-          "category": "Hot",
-          "brand": "Starbucks",
-          "price": 5.29,
-          "size": "12 oz",
-          "img": "https://tse2.mm.bing.net/th?id=OIP.KyWOSvDWQTfY3JrpojzH3gHaEK&pid=Api&P=0&h=220"
-        },
-        {
-          "id":"21",
-          "name": "Cold Brew",
-          "category": "Cold",
-          "brand": "Starbucks",
-          "price": 3.99,
-          "size": "16 oz",
-          "img": "https://tse3.mm.bing.net/th?id=OIP.MJB8MrQaAwFTJCV9ZG9tfAHaHZ&pid=Api&P=0&h=220"
-        }
-      ]
-      
+  "coffees": [
+    {
+      "id": "1",
+      "name": "Espresso",
+      "category": "Hot",
+      "brand": "Lavazza",
+      "price": 2.99,
+      "size": "2 oz",
+      "img": "https://static.wixstatic.com/media/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png"
+    },
+    {
+      "id": "2",
+      "name": "Latte",
+      "category": "Hot",
+      "brand": "Starbucks",
+      "price": 4.99,
+      "size": "12 oz",
+      "img": "https://as2.ftcdn.net/v2/jpg/03/15/91/95/1000_F_315919556_b7J8OGH5IobzosWBmC5NOwMoP5eZLpxn.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Cappuccino",
+      "category": "Hot",
+      "brand": "Illy",
+      "price": 3.99,
+      "size": "6 oz",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.JUn3nT2byRSbvv9MCp1cYwHaHa&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "4",
+      "name": "Americano",
+      "category": "Hot",
+      "brand": "Peet's Coffee",
+      "price": 2.49,
+      "size": "8 oz",
+      "img": "https://www.craftcoffeeguru.com/wp-content/uploads/2019/02/americano12.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Flat White",
+      "category": "Hot",
+      "brand": "Stumptown",
+      "price": 4.49,
+      "size": "8 oz",
+      "img": "https://espressocoffeebrewers.com/wp-content/uploads/2020/12/white-coffee-1542x2048.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Macchiato",
+      "category": "Hot",
+      "brand": "Lavazza",
+      "price": 3.29,
+      "size": "3 oz",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.w_RmjbuDKCxpHhUmSgtfWgHaIK&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "7",
+      "name": "Mocha",
+      "category": "Hot",
+      "brand": "Dunkin'",
+      "price": 4.79,
+      "size": "12 oz",
+      "img": "https://www.everyday-delicious.com/wp-content/uploads/2022/07/iced-mocha-everyday-delicious-1.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Cold Brew",
+      "category": "Cold",
+      "brand": "Starbucks",
+      "price": 3.99,
+      "size": "16 oz",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.MJB8MrQaAwFTJCV9ZG9tfAHaHZ&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "9",
+      "name": "Iced Latte",
+      "category": "Cold",
+      "brand": "Peet's Coffee",
+      "price": 4.99,
+      "size": "16 oz",
+      "img": "https://tse2.explicit.bing.net/th?id=OIP.H-CiFXPH6tz3R7oYfK4PbgHaN3&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "10",
+      "name": "Iced Americano",
+      "category": "Cold",
+      "brand": "Blue Bottle",
+      "price": 3.49,
+      "size": "12 oz",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.KyWOSvDWQTfY3JrpojzH3gHaEK&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "11",
+      "name": "Nitro Cold Brew",
+      "category": "Cold",
+      "brand": "Stumptown",
+      "price": 5.49,
+      "size": "12 oz",
+      "img": "https://static.wixstatic.com/media/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/8da0f0_42243656a4da4d51bd6b375e0b81fd22~mv2.png"
+    },
+    {
+      "id": "12",
+      "name": "Frappuccino",
+      "category": "Cold",
+      "brand": "Starbucks",
+      "price": 5.99,
+      "size": "16 oz",
+      "img": "https://as2.ftcdn.net/v2/jpg/03/15/91/95/1000_F_315919556_b7J8OGH5IobzosWBmC5NOwMoP5eZLpxn.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Iced Mocha",
+      "category": "Cold",
+      "brand": "Caribou Coffee",
+      "price": 4.79,
+      "size": "16 oz",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.JUn3nT2byRSbvv9MCp1cYwHaHa&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "14",
+      "name": "Affogato",
+      "category": "Dessert",
+      "brand": "Lavazza",
+      "price": 5.29,
+      "size": "4 oz",
+      "img": "https://www.craftcoffeeguru.com/wp-content/uploads/2019/02/americano12.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Irish Coffee",
+      "category": "Alcoholic",
+      "brand": "Baileys",
+      "price": 6.99,
+      "size": "8 oz",
+      "img": "https://espressocoffeebrewers.com/wp-content/uploads/2020/12/white-coffee-1542x2048.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Café au Lait",
+      "category": "Hot",
+      "brand": "Cafe du Monde",
+      "price": 3.79,
+      "size": "12 oz",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.w_RmjbuDKCxpHhUmSgtfWgHaIK&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "17",
+      "name": "Ristretto",
+      "category": "Hot",
+      "brand": "Illy",
+      "price": 2.99,
+      "size": "1 oz",
+      "img": "https://www.everyday-delicious.com/wp-content/uploads/2022/07/iced-mocha-everyday-delicious-1.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Turkish Coffee",
+      "category": "Hot",
+      "brand": "Kurukahveci Mehmet Efendi",
+      "price": 4.99,
+      "size": "4 oz",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.MJB8MrQaAwFTJCV9ZG9tfAHaHZ&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "19",
+      "name": "Vietnamese Iced Coffee",
+      "category": "Cold",
+      "brand": "Trung Nguyen",
+      "price": 3.99,
+      "size": "12 oz",
+      "img": "https://tse2.explicit.bing.net/th?id=OIP.H-CiFXPH6tz3R7oYfK4PbgHaN3&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "20",
+      "name": "Caramel Macchiato",
+      "category": "Hot",
+      "brand": "Starbucks",
+      "price": 5.29,
+      "size": "12 oz",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.KyWOSvDWQTfY3JrpojzH3gHaEK&pid=Api&P=0&h=220"
+    },
+    {
+      "id": "21",
+      "name": "Cold Brew",
+      "category": "Cold",
+      "brand": "Starbucks",
+      "price": 3.99,
+      "size": "16 oz",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.MJB8MrQaAwFTJCV9ZG9tfAHaHZ&pid=Api&P=0&h=220"
+    }
+  ]
 }

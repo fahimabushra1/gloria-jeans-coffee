@@ -9,8 +9,8 @@ const Products = ({data}) => {
          <div className="flex justify-center items-center items-stretch flex-wrap gap-4 px-6">
           {
             // eslint-disable-next-line react/prop-types
-            data.map((coffee)=>
-              <Product key={coffee.id} coffee={coffee} />)
+            data?.map((coffee)=>
+              <Product key={coffee._id} coffee={coffee} />)
           }
          </div>
         </div>

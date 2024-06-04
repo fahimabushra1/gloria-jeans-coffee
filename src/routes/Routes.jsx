@@ -12,7 +12,6 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import AllProducts from "../pages/dashboard/AllProducts";
 import AddProduct from "../pages/dashboard/AddProduct";
 import EditProduct from "../pages/dashboard/EditProduct";
-import CoffeeDetail from "../pages/dashboard/CoffeeDetail";
 
 export const router = createBrowserRouter([
     {
@@ -23,12 +22,12 @@ export const router = createBrowserRouter([
          {
             path: "/",
             element: <Home/>,
-            loader:()=> fetch("http://localhost:3000/coffees"),
+            loader:()=> fetch("https://gloria-jeans-server.vercel.app/coffees"),
          },
          {
             path: "/products/:id",
             element: <ProductDetails/>,
-            loader:({params})=>fetch(`http:localhost:3000/coffees/${params.id}`),
+            loader:({params})=>fetch(`https://gloria-jeans-server.vercel.app/coffees/${params._id}`),
          },
          {
             path: "/about",
@@ -65,18 +64,13 @@ export const router = createBrowserRouter([
         },
         {
           path: "/dashboard/add-products",
-          element:<AddProduct/>
+          element:<AddProduct/>,
+          loader:({params})=>fetch(`https://gloria-jeans-server.vercel.app/coffees/${params._id}`),
         },
         {
           path: "/dashboard/edit-product/:id",
           element:<EditProduct/>,
-          loader:({params})=>fetch(`http://localhost:3000/coffees/${params.id}`),
-        },
-        {
-          path: "/dashboard/detail-product/:id",
-          element:<CoffeeDetail/>,
-          loader:({params})=>
-            fetch(`http://localhost:3000/coffees/${params.id}`),
+          loader:({params})=>fetch(`https://gloria-jeans-server.vercel.app/coffees/${params._id}`),
         },
        
       ]
