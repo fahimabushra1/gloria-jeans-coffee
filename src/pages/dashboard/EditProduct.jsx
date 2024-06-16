@@ -1,9 +1,17 @@
+import { useState } from "react";
 import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 const EditProduct = () => {
     const coffee = useLoaderData();
     console.log(coffee)
+
+    const [coffeeName, setCoffeeName] = useState(coffee?.name);
+    const [coffeeBrand, setCoffeeBrand] = useState(coffee?.brand);
+    const [coffeeCategory, setCoffeeCategory] = useState(coffee?.category);
+    const [coffeePrice, setCoffeePrice] = useState(coffee?.price);
+    const [coffeeSize, setCoffeeSize] = useState(coffee?.size);
+    const [coffeeImg, setCoffeeImg] = useState(coffee?.img);
 
     const handleSubmit= async (e)=>{
         e.preventDefault();
@@ -47,19 +55,19 @@ const EditProduct = () => {
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
-              <input type="text" name="productName" placeholder="product name" className="input input-bordered" required />
+              <input type="text" name="productName" placeholder="product name" value={coffeeName} onChange={(e)=>setCoffeeName(e.target.value)} className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Brand Name</span>
               </label>
-              <input type="text" name="brandName" placeholder="brand name" className="input input-bordered" required />
+              <input type="text" name="brandName" placeholder="brand name" value={coffeeBrand} onChange={(e)=>setCoffeeBrand(e.target.value)} className="input input-bordered" required />
               </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Price</span>
               </label>
-              <input type="number" name="price" placeholder="price" className="input input-bordered" required />
+              <input type="number" name="price" placeholder="price" value={coffeePrice} onChange={(e)=>setCoffeePrice(e.target.value)} className="input input-bordered" required />
               </div>
          </div>
            <div className="w-1/2">
@@ -67,19 +75,19 @@ const EditProduct = () => {
               <label className="label">
                 <span className="label-text">Category Name</span>
               </label>
-              <input type="text" name="category" placeholder="category" className="input input-bordered" required />
+              <input type="text" name="category" placeholder="category" value={coffeeCategory} onChange={(e)=>setCoffeeCategory(e.target.value)} className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Size</span>
               </label>
-              <input type="text" name="size" placeholder="size" className="input input-bordered" required />
+              <input type="text" name="size" placeholder="size" value={coffeeSize} onChange={(e)=>setCoffeeSize(e.target.value)} className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Image</span>
               </label>
-              <input type="text" name="img" placeholder="image URL" className="input input-bordered" required />
+              <input type="text" name="img" placeholder="image URL" value={coffeeImg} onChange={(e)=>setCoffeeImg(e.target.value)} className="input input-bordered" required />
             </div>
            </div>
           </div>
