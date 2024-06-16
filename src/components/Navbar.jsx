@@ -44,7 +44,7 @@ const Navbar = () => {
             <li><Link to='/register'>Sign Up</Link></li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end font-bold text-white">
        {
          user?
          <>
@@ -52,7 +52,7 @@ const Navbar = () => {
          <button onClick={handleLogout} className="btn mr-2">Log out</button>
          </>
          :
-        <Link to= "/login">Login</Link>
+        <Link to= "/login" className="mx-4">Login</Link>
        }
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">

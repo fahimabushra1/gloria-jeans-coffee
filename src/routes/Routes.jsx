@@ -64,7 +64,10 @@ export const router = createBrowserRouter([
         },
         {
           path: "/dashboard/add-products",
-          element:<AddProduct/>,
+          element:
+         <PrivateRoute>
+           <AddProduct/>
+         </PrivateRoute>,
           loader:()=> fetch("http://localhost:5000/coffees"),
         },
         {
