@@ -9,7 +9,7 @@ const Dashboard = () => {
   console.log(user)
 
     return (
-        <>
+        <div>
             <h1 className="text-5xl text-center font-bold text-[#431407] my-8">My Dashboard</h1>
           <div className="overflow-x-auto">
             <table className="table">
@@ -30,7 +30,7 @@ const Dashboard = () => {
             </tbody>
             </table>
           </div>
-        </>
+        </div>
     );
 };
 

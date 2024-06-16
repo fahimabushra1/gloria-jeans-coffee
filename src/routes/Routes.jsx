@@ -22,12 +22,12 @@ export const router = createBrowserRouter([
          {
             path: "/",
             element: <Home/>,
-            loader:()=> fetch("https://gloria-jeans-server.vercel.app/coffees"),
+            loader:()=> fetch("http://localhost:5000/coffees"),
          },
          {
             path: "/products/:id",
             element: <ProductDetails/>,
-            loader:({params})=>fetch(`https://gloria-jeans-server.vercel.app/coffees/${params._id}`),
+            loader:({params})=>fetch(`http://localhost:5000/coffees/${params.id}`),
          },
          {
             path: "/about",
@@ -65,12 +65,12 @@ export const router = createBrowserRouter([
         {
           path: "/dashboard/add-products",
           element:<AddProduct/>,
-          loader:({params})=>fetch(`https://gloria-jeans-server.vercel.app/coffees/${params._id}`),
+          loader:()=> fetch("http://localhost:5000/coffees"),
         },
         {
           path: "/dashboard/edit-product/:id",
           element:<EditProduct/>,
-          loader:({params})=>fetch(`https://gloria-jeans-server.vercel.app/coffees/${params._id}`),
+          loader:({params})=>fetch(`http://localhost:5000/coffees/${params.id}`),
         },
        
       ]

@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 const EditProduct = () => {
@@ -12,17 +13,26 @@ const EditProduct = () => {
      const brand = form.brandName.value;
      const price = form.price.value;
      const category = form.category.value;
-     console.log(name,brand,price,category);
+     const size = form.size.value;
+     const img = form.img.value;
+     console.log(name,brand,price,category,size,img);
 
-     await fetch(`https://gloria-jeans-server.vercel.app/coffees/${coffee._id}`,{
+     const data ={name,category,brand,price,size,img};
+
+
+     await fetch(`http://localhost:5000/coffees/${coffee._id}`,{
         method: "PATCH",
         headers: {
             "Content-type": "application/json"
         },
         body: JSON.stringify(data),})
         .then((res) =>res.json())
-        .then((data) =>console.log(data))
+        .then((data) =>{
+          toast.success('data updated successfully');
+          console.log(data)
+          form.reset()})
         .catch((err) => {
+          toast.error('data  updated fail ')
           console.log(err.message);
        });
           
@@ -30,21 +40,20 @@ const EditProduct = () => {
         return (
         <div>
             <h1 className="text-5xl text-center text-[#431407] my-8 font-bold">Update Products</h1>
-           <div className="hero min-h-screen bg-base-200">
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form onSubmit={handleSubmit} className="card-body">
-            <div className="form-control">
+            <form onSubmit={handleSubmit} className="card-body w-full">
+          <div className="flex justify-center gap-4 bg-base-100 shadow-2xl p-12">
+         <div className="w-1/2">
+         <div className="form-control w-full">
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
-              <input type="text" name="productName" placeholder="product name"
-             className="input input-bordered" required />
+              <input type="text" name="productName" placeholder="product name" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Brand Name</span>
               </label>
-              <input type="text" name="brandName" placeholder="brand name"  className="input input-bordered" required />
+              <input type="text" name="brandName" placeholder="brand name" className="input input-bordered" required />
               </div>
             <div className="form-control">
               <label className="label">
@@ -52,18 +61,32 @@ const EditProduct = () => {
               </label>
               <input type="number" name="price" placeholder="price" className="input input-bordered" required />
               </div>
-            <div className="form-control">
+         </div>
+           <div className="w-1/2">
+           <div className="form-control">
               <label className="label">
                 <span className="label-text">Category Name</span>
               </label>
               <input type="text" name="category" placeholder="category" className="input input-bordered" required />
             </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Size</span>
+              </label>
+              <input type="text" name="size" placeholder="size" className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Image</span>
+              </label>
+              <input type="text" name="img" placeholder="image URL" className="input input-bordered" required />
+            </div>
+           </div>
+          </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Update</button>
               </div>
           </form>
-        </div>
-      </div>
     </div>
 );
     };

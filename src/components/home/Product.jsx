@@ -11,7 +11,7 @@ const Product = ({coffee}) => {
         <div className="card-body items-center text-center">
           <h2 className="card-title font-bold text-3xl text-[#431407]">{name}</h2>
         <div>
-         <p className="font-bold">Price: <span className="font-bold text-2xl text-[#431407]">{price}</span></p>
+         <p className="font-bold">Price: <span className="font-bold text-2xl text-[#431407]">{price}$</span></p>
         </div>
           <div className="card-actions">
             <button className="btn btn-primary mt-4"><Link to ={`/products/${_id}`}>See Details</Link></button>

@@ -12,7 +12,7 @@ const Navbar = () => {
     
         return (
        <div className="relative">
-        <div className="navbar bg-[#431407] fixed top-0 z-10 ">
+        <div className="navbar bg-[#9a3412] fixed top-0 z-10 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,21 +21,16 @@ const Navbar = () => {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link to='/'>Home</Link></li>
               <li><Link to='/about'>About</Link></li>
+              <li><Link to='/dashboard'>Dashboard</Link></li>
+              <li><Link to='/register'>Sign Up</Link></li>
              {
-              !user && (
-               <div>
-                 <li><Link to='/login'>Login</Link></li>
-                <li><Link to='/register'>Sign Up</Link></li>
-               </div>
-              )
-             }
-             {
-              user && (
-                <div>
-                      <li><Link to='/dashboard'>Dashboard</Link></li>
-              <li><button className="btn text-white bg-[#65a30d] font-bold" onClick={handleLogout}>Logout</button></li>
-                </div>
-              )
+              user?
+              <>
+              <span className="text-[#4c0519] font-bold">{user?.email}</span>
+              <button onClick={handleLogout} className="btn">Log out</button>
+              </>
+              :
+             <Link to= "/login">Login</Link>
              }
             </ul>
           </div>
@@ -46,12 +41,19 @@ const Navbar = () => {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/dashboard'>Dashboard</Link></li>
-            <li><Link to='/login'>Login</Link></li>
             <li><Link to='/register'>Sign Up</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
-          <div><button onClick={handleLogout} className="btn text-white bg-[#ea580c] font-bold">Logout</button></div>
+       {
+         user?
+         <>
+         <span className="text-white mr-4">{user?.email}</span>
+         <button onClick={handleLogout} className="btn mr-2">Log out</button>
+         </>
+         :
+        <Link to= "/login">Login</Link>
+       }
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <img alt="Tailwind CSS Navbar component" src="https://tse2.mm.bing.net/th?id=OIP.eCrcK2BiqwBGE1naWwK3UwHaHa&pid=Api&P=0&h=220" />
