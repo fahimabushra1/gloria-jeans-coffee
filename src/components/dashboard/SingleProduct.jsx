@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 
 
 const SingleProduct = ({coffeeProduct, onDelete}) => {
+  const token = localStorage.getItem('token')
     console.log(coffeeProduct,onDelete)
     const {_id,name,img,brand,size,category,price}= coffeeProduct;
 
     const handleDelete = async () =>{
         await fetch(`http://localhost:5000/coffees/${_id}`,{
             method: "DELETE",
+            headers: {
+              "Content-type": "application/json",
+                 authorization: `Bearer ${token}`
+          },
           })
             .then((res) =>res.json())
             .then((data) =>{

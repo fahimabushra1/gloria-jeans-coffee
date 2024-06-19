@@ -1,13 +1,14 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import GoogleLogin from "../components/login-registration/GoogleLogin";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useAuth from "../hooks/useAuth";
 import FbLogin from "../components/login-registration/FbLogin";
+import toast from "react-hot-toast";
 
 const Register = () =>{
   const {createUser,user}= useAuth();
   console.log(user)
-const [passMatch, setPassMatch]= useState();
+// const [passMatch, setPassMatch]= useState();
 
  const navigate = useNavigate();
   const location = useLocation();
@@ -26,7 +27,8 @@ const handleSubmit= async(e)=>{
 
 
   if(password != confirmPassword){
-    setPassMatch(true);
+    // setPassMatch(true);
+    toast.error("password don't match")
   }
 
   if(password==confirmPassword){
@@ -91,12 +93,13 @@ useEffect(()=>{
      </label>
      <input type="password" name="confirmPassword" placeholder="confirm password" className="input input-bordered" required />
      </div>
+     
      {
-       
-       passMatch && 
-       (<div className="my-2">
-           <p className="text-red-500">Passwords do not match</p>
-         </div>)
+<toast/>
+      //  passMatch && 
+      //  (<div className="my-2">
+      //      <p className="text-red-500">Passwords do not match</p>
+      //    </div>)
 
       }
      <label className="label">

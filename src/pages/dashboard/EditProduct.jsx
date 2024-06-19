@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 const EditProduct = () => {
+  const token = localStorage.getItem('token')
     const coffee = useLoaderData();
     console.log(coffee)
 
@@ -31,7 +32,8 @@ const EditProduct = () => {
      await fetch(`http://localhost:5000/coffees/${coffee._id}`,{
         method: "PATCH",
         headers: {
-            "Content-type": "application/json"
+            "Content-type": "application/json",
+            authorization: `Bearer ${token}`
         },
         body: JSON.stringify(data),})
         .then((res) =>res.json())
