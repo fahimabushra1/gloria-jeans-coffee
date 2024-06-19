@@ -17,7 +17,7 @@ const AllProducts = () => {
   return (
     <div>
       <h1 className="text-5xl text-center text-[#431407] my-8 font-bold">Coffees Collection</h1>
-<div className=" flex justify-around items-center justify-items-stretch flex-wrap gap-4 px-6">
+<div className=" flex justify-around items-center flex-wrap gap-4 px-6">
   {
     coffeeProducts?.map((coffeeProduct) =><SingleProduct key ={coffeeProduct._id} coffeeProduct= {coffeeProduct} onDelete={handleDeleteProduct}/>)
   }

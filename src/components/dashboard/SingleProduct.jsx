@@ -20,10 +20,10 @@ const SingleProduct = ({coffeeProduct, onDelete}) => {
 
     return (
         <div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 max-h-72 bg-base-100 shadow-xl ">
   <div className="flex justify-evenly items-center">
   <div>
-  <figure><img className="rounded-xl w-52" src={img} alt="coffees" /></figure>
+  <figure><img className="rounded-xl w-44 max-h-44" src={img} alt="coffees" /></figure>
   </div>
  <div>
  <div className="card-body">

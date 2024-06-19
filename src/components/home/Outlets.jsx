@@ -2,7 +2,7 @@
 
 const Outlets = () => {
     return (
-        <div>
+        <div id="outlets">
              <h1 className="text-center font-bold text-[#431407] my-8 text-5xl">Enjoy our <span className="text-[#f97316]">Ambience</span></h1>
        <div className="flex justify-around flex-wrap gap-4 px-6">
        <div className="card w-96 bg-base-100 shadow-xl">

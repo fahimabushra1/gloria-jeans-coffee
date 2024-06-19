@@ -1,15 +1,15 @@
 
-const SingleUser = ({user}) => {
+const SingleUser = ({user,userInfo}) => {
     console.log(user)
     return (
         <tr className="bg-base-200">
-        <th>{user.uid} </th>
+        <th>{userInfo._id} </th>
         <td>
-          {user.displayName}
+          {userInfo.displayName}
         </td>
-        <td>{user.email}</td>
-        <td>{user.metadata.lastSignInTime}</td>
-        <td>{user.accessToken.slice(0,10)}...</td>
+        <td>{userInfo.email}</td>
+        {/* <td>{user.metadata.lastSignInTime}</td>
+        <td>{user.accessToken.slice(0,10)}...</td> */}
       </tr>
     );
 };

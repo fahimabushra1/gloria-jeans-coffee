@@ -6,7 +6,7 @@ const Product = ({coffee}) => {
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
-          <img src= {img} alt="coffees" className="rounded-xl w-52" />
+          <img src= {img} alt="coffees" className="rounded-xl w-52 max-h-36" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title font-bold text-3xl text-[#431407]">{name}</h2>

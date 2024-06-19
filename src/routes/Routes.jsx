@@ -12,6 +12,7 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import AllProducts from "../pages/dashboard/AllProducts";
 import AddProduct from "../pages/dashboard/AddProduct";
 import EditProduct from "../pages/dashboard/EditProduct";
+import EditProfile from "../pages/EditProfile";
 
 export const router = createBrowserRouter([
     {
@@ -54,6 +55,14 @@ export const router = createBrowserRouter([
           <PrivateRoute>
           <Dashboard/>
           </PrivateRoute>
+        },
+        {
+         path: "/dashboard/edit-profile/:id",
+          element:
+          <PrivateRoute>
+          <EditProfile/>
+          </PrivateRoute>,
+          loader:({params})=>fetch(`http://localhost:5000/user/get/${params.id}`),
         },
         {
           path: "/dashboard/all-products",

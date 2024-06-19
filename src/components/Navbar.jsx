@@ -1,7 +1,7 @@
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import useAuth from "../hooks/useAuth";
-
 
 const Navbar = () => {
   const {logOut, user}= useAuth();
@@ -38,7 +38,17 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-bold text-white">
-            <li><Link to='/'>Home</Link></li>
+          <li><Link to='/'>Home</Link></li>
+            <li>
+        <details>
+            <summary>Home Menu</summary>
+          <ul className="p-2 bg-[#9a3412]">
+            <li><Link to='#our-products'>our products</Link></li>
+            <li><Link to='#faqs'>FAQs</Link></li>
+            <li><Link to='#outlets'>outlets</Link></li>
+          </ul>
+        </details>
+      </li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/dashboard'>Dashboard</Link></li>
             <li><Link to='/register'>Sign Up</Link></li>
