@@ -13,6 +13,7 @@ import AllProducts from "../pages/dashboard/AllProducts";
 import AddProduct from "../pages/dashboard/AddProduct";
 import EditProduct from "../pages/dashboard/EditProduct";
 import EditProfile from "../pages/EditProfile";
+import PopularCoffees from "../pages/PopularCoffees";
 
 export const router = createBrowserRouter([
     {
@@ -54,7 +55,8 @@ export const router = createBrowserRouter([
           element:
           <PrivateRoute>
           <Dashboard/>
-          </PrivateRoute>
+          </PrivateRoute>,
+           loader:()=> fetch("http://localhost:5000/coffees"),
         },
         {
          path: "/dashboard/edit-profile/:id",
@@ -70,6 +72,13 @@ export const router = createBrowserRouter([
           <PrivateRoute>
             <AllProducts/>
           </PrivateRoute>
+        },
+        {
+          path: "/dashboard/popular-coffees",
+          element:
+          <PrivateRoute>
+            <PopularCoffees/>
+          </PrivateRoute>,
         },
         {
           path: "/dashboard/add-products",
