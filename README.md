@@ -1,1 +1,1 @@
--gloria
+gloria-jeans-coffee
