@@ -51,7 +51,7 @@ console.log(user)
        <h2 className="card-title">All Coffees</h2>
        <p>{coffee.length} items</p>
        <div className="card-actions justify-end">
-      <Link to={'/dashboard/popular-coffees'} className="btn btn-primary">See items</Link>
+      <Link to={'/dashboard/all-products'} className="btn btn-primary">See items</Link>
     </div>
   </div>
 </div>
